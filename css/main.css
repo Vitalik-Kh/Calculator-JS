@@ -1,0 +1,148 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'Titillium';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/TitilliumWeb-Regular.ttf");
+}
+@font-face {
+  font-family: 'Titillium';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/TitilliumWeb-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Titillium';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/TitilliumWeb-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'MartelSans';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-Regular.ttf");
+}
+@font-face {
+  font-family: 'MartelSans';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-SemiBold.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'MartelSans';
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "digital-7";
+  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/digital-7.ttf");
+}
+/* line 47, ../sass/_base.scss */
+html > body {
+  font-family: MartelSans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 10, ../sass/main.scss */
+html {
+  height: 100%;
+}
+
+/* line 11, ../sass/main.scss */
+body {
+  height: 100%;
+  background: #a0a6ad;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;
+}
+
+/* line 17, ../sass/main.scss */
+#cal {
+  background: #778089;
+  width: 276px;
+  height: 374px;
+  margin: auto;
+  margin-top: 60px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 14px inset, rgba(0, 0, 0, 0.3) 0 4px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 14px inset, rgba(0, 0, 0, 0.3) 0 4px 8px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 14px inset, rgba(0, 0, 0, 0.3) 0 4px 8px;
+  padding: 18px 12px;
+}
+
+/* line 30, ../sass/main.scss */
+#screen {
+  overflow: hidden;
+  font-family: 'digital-7';
+  font-size: 40px;
+  line-height: 50px;
+  color: #4f555b;
+  text-align: right;
+  padding: 0 12px 0 4px;
+  margin: 6px;
+  background: #d4e3d3;
+  height: 50px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: rgba(6, 10, 6, 0.9) 0 0 3px inset, rgba(206, 223, 205, 0.8) 0 0 1px;
+  -webkit-box-shadow: rgba(6, 10, 6, 0.9) 0 0 3px inset, rgba(206, 223, 205, 0.8) 0 0 1px;
+  box-shadow: rgba(6, 10, 6, 0.9) 0 0 3px inset, rgba(206, 223, 205, 0.8) 0 0 1px;
+}
+
+/* line 48, ../sass/main.scss */
+#btn-container {
+  margin-top: 20px;
+}
+
+/* line 52, ../sass/main.scss */
+.calc-btn {
+  color: #4f555b;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  width: 51px;
+  height: 40px;
+  background: #eeeeee;
+  float: left;
+  margin: 6px;
+  border: none;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 2px inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 2px inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 2px inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+}
+/* line 66, ../sass/main.scss */
+.calc-btn:focus, .calc-btn:active {
+  outline: none;
+}
+/* line 72, ../sass/main.scss */
+.calc-btn:active {
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
+}
+
+/* line 79, ../sass/main.scss */
+.btn-color {
+  background: #26EAB9;
+  color: #f6f6f6;
+}
+
+/* line 82, ../sass/main.scss */
+.btn-group {
+  float: left;
+  width: 189px;
+}
+
+/* line 86, ../sass/main.scss */
+.btn-long {
+  height: 92px;
+  line-height: 92px;
+}

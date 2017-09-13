@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'Titillium';
+    src: url($project-link + 'fonts/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url($project-link + 'fonts/TitilliumWeb-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Titillium';
+    src: url($project-link + 'fonts/TitilliumWeb-Bold.ttf');
+    font-weight: bold;
+}
+
+//martelSans
+
+@font-face {
+    font-family: 'MartelSans';
+    src: url($project-link + 'fonts/MartelSans/MartelSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MartelSans';
+    src: url($project-link + 'fonts/MartelSans/MartelSans-SemiBold.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MartelSans';
+    src: url($project-link + 'fonts/MartelSans/MartelSans-Bold.ttf');
+    font-weight: bold;
+}
+
+//calculator display font
+
+@font-face {
+    font-family: "digital-7";
+    src: url($project-link + 'fonts/digital-7.ttf');
+}
+
+
+
+html > body {
+    font-family: MartelSans, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
