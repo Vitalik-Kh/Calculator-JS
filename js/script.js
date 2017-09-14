@@ -157,8 +157,4 @@ $(document).ready(function() {
     newOperEntry('calc-plus', '+');
     newOperEntry('calc-divide', '/');
     newOperEntry('calc-mult', '*');
-
-    setInterval(function() {
-        $('#math-scr').text(mathScreen);
-    },100);
 });
