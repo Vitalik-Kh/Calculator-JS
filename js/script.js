@@ -1,11 +1,59 @@
 $(document).ready(function() {
     var divide = '&#247;';
     var multiply = '&#215;';
-    var screen = $('#screen');
-    var mathScreen = '';
-    var startClean = false;
+    var screen = $('#screen');//calculator's screen
+    var mathScreen = '';//where all calculations happen
+    var startClean = false; //start with clear screen
 
     screen.text('');
+
+    function mathScrLast() {
+        return mathScreen.charAt(mathScreen.length - 1); }
+
+    function mathScrFirst() {
+        return mathScreen.charAt(0); }
+
+    function setMathScrLast(value) {
+        var temp = mathScreen.slice(0,-1);
+        mathScreen = temp + value;
+    }
+
+    //remove invalid math operators in the begining and the end
+    function removeSideOper() {
+        if (mathScreen != '') {
+            if (lastIsOper() === true) {
+                setMathScrLast('');
+            }
+            if (mathScrFirst() == '*' || mathScrFirst() == '/') {
+                mathScreen = mathScreen.slice(1);
+            }
+        }
+    }
+
+    //start with clear screen
+    function allClear() {
+        screen.html('');
+        mathScreen = '';
+    }
+
+    function lastIsOper() {
+        if ( mathScrLast() != '+' &&
+             mathScrLast() != '-' &&
+             mathScrLast() != '*' &&
+             mathScrLast() != '/'
+
+         ) { return false; }
+        else { return true; }
+    }
+
+    //to enter negative value
+    function startWithMinus() {
+        if (mathScreen == '-') {
+            return true;
+        } else { return false; }
+    }
+
+    //Main Functions
 
     function newEntry(btn, value) {
         $('#' + btn).click(function() {
@@ -28,33 +76,14 @@ $(document).ready(function() {
                          return origin += value;
                     });
                 }
-
             } else if (startClean === true) {
                 mathScreen = value;
                 screen.html(value);
                 startClean = false;
             }
-
-
         });
 
     } //newEntry
-
-    function lastIsOper() {
-        if ( mathScrLast() != '+' &&
-             mathScrLast() != '-' &&
-             mathScrLast() != '*' &&
-             mathScrLast() != '/'
-
-         ) { return false; }
-        else { return true; }
-    }
-
-    function startWithMinus() {
-        if (mathScreen == '-') {
-            return true;
-        } else { return false; }
-    }
 
     function newOperEntry(btn, value) {
         $('#' + btn).click(function() {
@@ -70,40 +99,6 @@ $(document).ready(function() {
                 startClean = false;
             }
         });
-    }
-
-    function newMinusEntry() {
-        $('#calc-minus').click(function() {
-
-        });
-    }
-
-    function mathScrLast() {
-        return mathScreen.charAt(mathScreen.length - 1); }
-
-    function mathScrFirst() {
-        return mathScreen.charAt(0); }
-
-    function setMathScrLast(value) {
-        var length = mathScreen.length;
-        var temp = mathScreen.slice(0,-1);
-        mathScreen = temp + value;
-    }
-
-    //remove invalid math operators in the begining and the end
-    function removeSideOper() {
-        if (mathScreen != '') {
-            if (lastIsOper() === true) {
-                setMathScrLast('');
-            } else if (mathScrFirst() == '*' || mathScrFirst() == '/') {
-                mathScreen = mathScreen.slice(1);
-            }
-        }
-    }
-
-    function allClear() {
-        screen.html('');
-        mathScreen = '';
     }
 
     function equal() {
@@ -140,8 +135,6 @@ $(document).ready(function() {
         screen.text('');
     }
 
-
-
     $('#calc-ac').click(allClear);
     $('#calc-ce').click(clearLastEntry);
     $('#calc-equal').click(equal);
@@ -165,13 +158,7 @@ $(document).ready(function() {
     newOperEntry('calc-divide', '/');
     newOperEntry('calc-mult', '*');
 
-
     setInterval(function() {
-        $('#btn-console').text(mathScreen);
-    }, 100);
-
-    $('#btn-console').click(function() {
-        mathScreen = mathScreen.slice(1);
-        console.log(mathScreen);
-    });
+        $('#math-scr').text(mathScreen);
+    },100);
 });

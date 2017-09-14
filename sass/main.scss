@@ -7,7 +7,7 @@
 @import "variables";
 @import "base";
 
-html {height: 100%}
+html { height: 100%; }
 body {
     height: 100%;
     background: $background-color;
@@ -26,7 +26,7 @@ body {
                         );
     padding: 18px 12px;
 }
-//dd
+
 #screen {
     overflow: hidden;
     font-family: 'digital-7';
@@ -34,7 +34,6 @@ body {
     line-height: 50px;
     color: darken($cal-color, 17%);
     text-align: right;
-    //direction: rtl;
     padding: 0 12px 0 4px;
     margin: 6px;
     background: lighten($screen-color, 2%);
@@ -45,9 +44,7 @@ body {
                         );
 }
 
-#btn-container {
-    margin-top: 20px;
-}
+#btn-container { margin-top: 20px; }
 
 .calc-btn {
     color: darken($cal-color, 17%);
