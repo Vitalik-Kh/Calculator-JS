@@ -4,21 +4,21 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @font-face {
   font-family: 'MartelSans';
-  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-Regular.ttf");
+  src: url("../fonts/MartelSans/MartelSans-Regular.ttf");
 }
 @font-face {
   font-family: 'MartelSans';
-  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-SemiBold.ttf");
+  src: url("../fonts/MartelSans/MartelSans-SemiBold.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: 'MartelSans';
-  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/MartelSans/MartelSans-Bold.ttf");
+  src: url("../fonts/MartelSans/MartelSans-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: "digital-7";
-  src: url("C:/Users/Vitalik/Google Drive/Programming/freeCodeCamp/Calculator/fonts/digital-7.ttf");
+  src: url("../fonts/digital-7.ttf");
 }
 /* line 27, ../sass/_base.scss */
 html > body {

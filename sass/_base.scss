@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'MartelSans';
-    src: url($project-link + 'fonts/MartelSans/MartelSans-Regular.ttf');
+    src: url('../fonts/MartelSans/MartelSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'MartelSans';
-    src: url($project-link + 'fonts/MartelSans/MartelSans-SemiBold.ttf');
+    src: url('../fonts/MartelSans/MartelSans-SemiBold.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'MartelSans';
-    src: url($project-link + 'fonts/MartelSans/MartelSans-Bold.ttf');
+    src: url('../fonts/MartelSans/MartelSans-Bold.ttf');
     font-weight: bold;
 }
 
@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: "digital-7";
-    src: url($project-link + 'fonts/digital-7.ttf');
+    src: url('../fonts/digital-7.ttf');
 }
 
 
