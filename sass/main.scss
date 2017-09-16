@@ -10,7 +10,7 @@
 html { height: 100%; }
 body {
     height: 100%;
-    background: $background-color;
+    background: $background-color fixed;
     @include box-shadow(rgba(black, 0.2) 0 0 80px inset);
 }
 

@@ -20,7 +20,18 @@
   font-family: "digital-7";
   src: url("../fonts/digital-7.ttf");
 }
-/* line 27, ../sass/_base.scss */
+@media screen and (max-height: 434px) {
+  /* line 26, ../sass/_base.scss */
+  html {
+    height: auto !important;
+  }
+
+  /* line 27, ../sass/_base.scss */
+  body {
+    height: auto !important;
+  }
+}
+/* line 30, ../sass/_base.scss */
 html > body {
   font-family: MartelSans, sans-serif;
   font-size: 16px;
@@ -35,7 +46,7 @@ html {
 /* line 11, ../sass/main.scss */
 body {
   height: 100%;
-  background: #a0a6ad;
+  background: #a0a6ad fixed;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 80px inset;

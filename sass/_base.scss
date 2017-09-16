@@ -22,7 +22,10 @@
     src: url('../fonts/digital-7.ttf');
 }
 
-
+@media screen and (max-height: 434px) {
+    html { height: auto !important}
+    body { height: auto !important}
+}
 
 html > body {
     font-family: MartelSans, sans-serif;
