@@ -61,8 +61,8 @@ body {
 #screen {
   overflow: hidden;
   font-family: 'digital-7';
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5em;
+  line-height: 1.25;
   color: #4f555b;
   text-align: right;
   padding: 0 12px 0 4px;
@@ -85,8 +85,8 @@ body {
 /* line 49, ../sass/main.scss */
 .calc-btn {
   color: #4f555b;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 1.1em;
+  line-height: 2.3;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
@@ -130,5 +130,5 @@ body {
 /* line 83, ../sass/main.scss */
 .btn-long {
   height: 92px;
-  line-height: 92px;
+  line-height: 5.2;
 }
