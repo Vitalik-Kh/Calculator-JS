@@ -121,9 +121,9 @@ body {
 }
 /* line 69, ../sass/main.scss */
 .calc-btn:active {
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px inset, rgba(0, 0, 0, 0.5) 0 0 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px inset, rgba(0, 0, 0, 0.7) 0 0 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px inset, rgba(0, 0, 0, 0.7) 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px inset, rgba(0, 0, 0, 0.7) 0 0 1px;
 }
 
 /* line 76, ../sass/main.scss */

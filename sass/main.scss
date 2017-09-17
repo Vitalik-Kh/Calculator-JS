@@ -67,8 +67,8 @@ body {
                         );
 
     &:active {
-        @include box-shadow(rgba(black, 0.5) 0 0 3px inset,
-                            rgba(black, 0.5) 0 0 1px
+        @include box-shadow(rgba(black, 0.8) 0 0 3px inset,
+                            rgba(black, 0.7) 0 0 1px
                             );
     }
 }
